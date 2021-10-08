@@ -11,7 +11,7 @@ from flask import Flask,render_template,jsonify
 
 app = Flask(__name__)
 client = pymongo.MongoClient("mongodb+srv://<username>:<password>@cluster0.z4nvb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority") #User your mongo details
-db = client.test # Your Db Name
+db = client.test # Db Name
 
 executable_path = {'executable_path': ChromeDriverManager().install()}
 browser = Browser('chrome', **executable_path, headless=False)
